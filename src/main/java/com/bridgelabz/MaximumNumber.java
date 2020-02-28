@@ -22,4 +22,14 @@ public class MaximumNumber {
         }
         return maximum;
     }
+    public String getMaxString(String fruit1, String fruit2, String fruit3) {
+        String maximum = fruit1;
+        if(fruit2.compareTo(maximum)>0){
+            maximum=fruit2;
+        }
+        if (fruit3.compareTo(maximum)>0){
+            maximum=fruit3;
+        }
+        return maximum;
+    }
 }

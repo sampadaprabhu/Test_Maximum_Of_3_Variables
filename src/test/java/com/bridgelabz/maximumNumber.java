@@ -48,4 +48,22 @@ public class maximumNumber {
         Assert.assertEquals(5.7,max,1);
     }
 
+    @Test
+    public void testString1() {
+        String max=maxNumber.getMaxString("Peach","Banana","Apple");
+        Assert.assertEquals("Largest Fruit Is : ", "Peach",max);
+    }
+
+    @Test
+    public void testString2() {
+        String max=maxNumber.getMaxString("Apple","Peach","Banana");
+        Assert.assertEquals("Largest Friut Is : ","Peach",max);
+    }
+
+    @Test
+    public void testString3() {
+        String max=maxNumber.getMaxString("Banana","Apple","Peach");
+        Assert.assertEquals("Largest Fruit Is : ","Peach",max);
+    }
+
 }
