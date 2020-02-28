@@ -11,4 +11,15 @@ public class MaximumNumber {
         }
         return maximum;
     }
+
+    public float getMaxFloatNumber(float x, float y, float z) {
+        float maximum = x;
+        if(Float.compare(y , maximum) > 0){
+            maximum= y;
+        }
+        if(Float.compare(z,maximum)>0){
+            maximum=z;
+        }
+        return maximum;
+    }
 }

@@ -30,4 +30,22 @@ public class maximumNumber {
         Assert.assertEquals(5,max);
     }
 
+    @Test
+    public void testFloat1() {
+        float max=maxNumber.getMaxFloatNumber(5.7f, 3.2f,4.3f);
+        Assert.assertEquals(5.7,max,1);
+    }
+
+    @Test
+    public void testFloat2() {
+        float max=maxNumber.getMaxFloatNumber(4.3f, 5.7f, 3.2f);
+        Assert.assertEquals(5.7,max,1);
+    }
+
+    @Test
+    public void testFloat3() {
+        float max=maxNumber.getMaxFloatNumber(3.2f, 4.3f, 5.7f);
+        Assert.assertEquals(5.7,max,1);
+    }
+
 }
