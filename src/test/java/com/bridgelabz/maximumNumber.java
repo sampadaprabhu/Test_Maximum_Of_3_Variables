@@ -68,4 +68,22 @@ public class maximumNumber {
         Comparable max=maxNumber.checkMaximum();
         Assert.assertEquals("Largest Fruit Is : ","Peach",max);
     }
+
+    @Test
+    public void testIntegerMoreThanThreeNumbers() {
+        Comparable max = MaximumNumber.getMaximum(1,2,3,4,5);
+        Assert.assertEquals(5,max);
+    }
+
+    @Test
+    public void testFloatMoreThanThreeFloat() {
+        Comparable max= MaximumNumber.getMaximum(2.1f,4.3f,7.6f,9.8f);
+        Assert.assertEquals(9.8, (Float) max,1);
+    }
+
+    @Test
+    public void testStringMoreThanThreeString() {
+        Comparable max=MaximumNumber.getMaximum("Sampada","Anagha","Utkarsha","Diksha");
+        Assert.assertEquals("String Is : ","Utkarsha",max);
+    }
 }

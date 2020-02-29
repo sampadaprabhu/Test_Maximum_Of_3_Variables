@@ -25,11 +25,21 @@ public class MaximumNumber <E extends Comparable<E>>{
             maximum=z;
         }
         if(arrayValues.length !=0){
+            //    for (E i: arrayValues) {
+//                if (maximum.compareTo(i)<0){
+//                    maximum=i;
+//                }
+//            }
             Arrays.sort(arrayValues, Collections.reverseOrder());
             if (maximum.compareTo(arrayValues[0])<0){
                 maximum=arrayValues[0];
             }
         }
+        printMaximum(maximum);
         return maximum;
+    }
+
+    private static <E extends Comparable<E>> void printMaximum(E maximum) {
+        System.out.println("The Maximum Is : "+maximum);
     }
 }
